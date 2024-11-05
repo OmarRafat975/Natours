@@ -2,7 +2,7 @@
   "name": "natours",
   "version": "1.0.0",
   "description": "learning node, express and mongodb",
-  "main": "app.js",
+  "main": "server.js",
   "devContentSecurityPolicy": "default-src 'self' https://unpkg.com/leaflet@1.8.0/dist/leaflet.js https://js.stripe.com/v3/ 'unsafe-inline'; style-src-elem 'self' https://unpkg.com/leaflet@1.8.0/dist/leaflet.css https://fonts.googleapis.com 'unsafe-inline'; script-src-elem 'self' https://unpkg.com/leaflet@1.8.0/dist/leaflet.js https://js.stripe.com/v3/ 'unsafe-inline'; img-src 'self' * data:; connect-src 'self' https://js.stripe.com/v3/; frame-src 'self' https://js.stripe.com/ https://*.stripe.com;",
   "scripts": {
     "start": "node server.js",
