@@ -5,7 +5,8 @@
   "main": "app.js",
   "devContentSecurityPolicy": "default-src 'self' https://unpkg.com/leaflet@1.8.0/dist/leaflet.js https://js.stripe.com/v3/ 'unsafe-inline'; style-src-elem 'self' https://unpkg.com/leaflet@1.8.0/dist/leaflet.css https://fonts.googleapis.com 'unsafe-inline'; script-src-elem 'self' https://unpkg.com/leaflet@1.8.0/dist/leaflet.js https://js.stripe.com/v3/ 'unsafe-inline'; img-src 'self' * data:; connect-src 'self' https://js.stripe.com/v3/; frame-src 'self' https://js.stripe.com/ https://*.stripe.com;",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "start:prod": "set NODE_ENV=production && nodemon server.js",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url /js",
