@@ -5,13 +5,11 @@ const bookingController = require('../controllers/bookingController');
 
 const router = express.Router();
 
-router
-  .route('/')
-  .get(
-    bookingController.createBookingCheckout,
-    authController.isLoggedin,
-    viewController.overview,
-  );
+router.route('/').get(
+  // bookingController.createBookingCheckout,
+  authController.isLoggedin,
+  viewController.overview,
+);
 router
   .route('/tour/:slug')
   .get(authController.isLoggedin, viewController.getTour);
